@@ -1,7 +1,7 @@
 """
 Minimal Example
 ===============
-Generating a square wordcloud from the US constitution using default arguments.
+https://github.com/amueller/word_cloud
 """
 
 from os import path
@@ -10,7 +10,7 @@ from wordcloud import WordCloud
 d = path.dirname(__file__)
 
 # Read the whole text.
-text = open(path.join(d, 'A_encruzilhada_da_Universidade_Europeia_Set11.txt')).read()
+text = open(path.join(d, '47_Douta_Ignorancia.txt')).read()
 
 # Generate a word cloud image
 wordcloud = WordCloud().generate(text)
